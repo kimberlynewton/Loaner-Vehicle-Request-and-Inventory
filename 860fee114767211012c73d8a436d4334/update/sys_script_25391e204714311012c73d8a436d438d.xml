@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_759169_lva_vehicle_tracker</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Vehicle Status</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    // Get the vehicle record that is referenced by the 'vehicle' field on the current Vehicle Tracker record
+    var gr = current.vehicle.getRefRecord();
+
+    // Check if the vehicle record was successfully retrieved
+    if (gr.isValidRecord()) {  
+
+        // If the Vehicle Status on the current Vehicle Tracker record is Pending Release, Out on Field, Returned for Inspection, or Sent for Servicing
+        if (current.vehicle_status == 'pending release' || current.vehicle_status == 'out on field' || current.vehicle_status == 'returned for inspection' || current.vehicle_status == 'sent for servicing') {
+            // Set the status of the Vehicle Catalog record to Unavailable
+            gr.setValue('status', 'unavailable'); 
+        }
+        
+        // Else, if the Vehicle Status on the current Vehicle Tracker record is Returned to Warehouse
+        else if (current.vehicle_status == 'returned to warehouse') {
+            // Set the status of the Vehicle Catalog record to Available
+            gr.setValue('status', 'available');
+        }
+        
+        // Else, if the Vehicle Status on the current Vehicle Tracker record is Decommissioned
+        else if (current.vehicle_status == 'decommissioned') {
+            // Set the status of the Vehicle Catalog record to Decommissioned
+            gr.setValue('status', 'decommissioned');
+        }
+        
+        // Update the Vehicle record in the database with the new status
+        gr.update();
+    }
+    
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-24 18:58:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>25391e204714311012c73d8a436d438d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Update Vehicle Status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_759169_lva">860fee114767211012c73d8a436d4334</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">860fee114767211012c73d8a436d4334</sys_scope>
+        <sys_update_name>sys_script_25391e204714311012c73d8a436d438d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-24 19:09:41</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=25391e204714311012c73d8a436d438d"/>
+</record_update>

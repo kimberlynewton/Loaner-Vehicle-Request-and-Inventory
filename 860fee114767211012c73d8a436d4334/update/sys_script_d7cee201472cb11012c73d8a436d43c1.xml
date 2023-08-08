@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_759169_lva_vehicle_servicing</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Vehicle Tracker on Service Closed</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+    if (current.u_ticket_status != 'closed') {
+        return;
+    }
+
+    // Create a new GlideRecord object for the Vehicle Tracker table
+    var gr = new GlideRecord('x_759169_lva_vehicle_tracker');
+
+    // Retrieve the Vehicle Tracker record associated with the current Vehicle Servicing ticket
+    if (gr.get(current.vehicle_tracker)) {
+
+        // Check the u_vehicle_status on the Vehicle Servicing ticket and map it to the corresponding vehicle_status on the Vehicle Tracker
+        switch (current.u_vehicle_status) {
+            case 'in service':
+                gr.vehicle_status = 'sent for servicing';
+                break;
+            case 'returned to warehouse':
+                gr.vehicle_status = 'returned to warehouse';
+                break;
+            case 'decommissioned':
+                gr.vehicle_status = 'decommissioned';
+                break;
+        }
+
+        // Set the Tracker Status of the Vehicle Tracker to Closed
+        gr.tracker_status = 'closed';
+
+        // Update the Vehicle Tracker record in the database
+        gr.update();
+    }
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-07 20:08:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d7cee201472cb11012c73d8a436d43c1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Update Vehicle Tracker on Service Closed</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_759169_lva">860fee114767211012c73d8a436d4334</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">860fee114767211012c73d8a436d4334</sys_scope>
+        <sys_update_name>sys_script_d7cee201472cb11012c73d8a436d43c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-07 23:18:40</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=d7cee201472cb11012c73d8a436d43c1"/>
+</record_update>

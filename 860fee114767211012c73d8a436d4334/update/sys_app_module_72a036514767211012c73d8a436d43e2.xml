@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Loaner Vehicle Request and Inventory">36a036514767211012c73d8a436d43de</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>SEPARATOR</link_type>
+        <map_page/>
+        <mobile_title>Loaner Vehicle Catalogs</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_759169_lva_loaner_vehicle_catalog</name>
+        <order>100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_759169_lva.lva_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-19 21:49:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>72a036514767211012c73d8a436d43e2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Loaner Vehicle Catalog</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_759169_lva">860fee114767211012c73d8a436d4334</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">860fee114767211012c73d8a436d4334</sys_scope>
+        <sys_update_name>sys_app_module_72a036514767211012c73d8a436d43e2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-19 21:58:25</sys_updated_on>
+        <timeline_page/>
+        <title>Loaner Vehicle Catalog</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

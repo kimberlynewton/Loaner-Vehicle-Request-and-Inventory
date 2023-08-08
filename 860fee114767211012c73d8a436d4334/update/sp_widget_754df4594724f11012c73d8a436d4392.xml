@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>#loaner-vehicle-table {&#13;
+  width: 100%;&#13;
+  border-collapse: collapse;&#13;
+}&#13;
+&#13;
+#loaner-vehicle-table th, #loaner-vehicle-table td {&#13;
+  border: 1px solid #ddd;&#13;
+  padding: 8px;&#13;
+}&#13;
+&#13;
+#loaner-vehicle-table tr:nth-child(even) {&#13;
+  background-color: #f2f2f2;&#13;
+}&#13;
+&#13;
+#loaner-vehicle-table th {&#13;
+  padding-top: 12px;&#13;
+  padding-bottom: 12px;&#13;
+  text-align: left;&#13;
+  background-color: #27A2AA;&#13;
+  color: white;&#13;
+}&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Transit 350 HD Cargo Van</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  data.vehicles = [];
+  var gr = new GlideRecord('x_759169_lva_loaner_vehicle_catalog');
+  gr.addQuery('vehicle_model', 'Transit 350 HD Cargo Van');
+  gr.query();
+  while(gr.next()) {
+    data.vehicles.push({
+      number: gr.number.getDisplayValue(),
+      status: gr.status.getDisplayValue(),
+      description: gr.vehicle_description.getDisplayValue(),
+      make: gr.vehicle_make.getDisplayValue(),
+      model: gr.vehicle_model.getDisplayValue(),
+      year: gr.vehicle_year.getDisplayValue()
+    });
+  }
+})();
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-08 06:32:11</sys_created_on>
+        <sys_id>754df4594724f11012c73d8a436d4392</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Transit 350 HD Cargo Van</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_759169_lva">860fee114767211012c73d8a436d4334</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">860fee114767211012c73d8a436d4334</sys_scope>
+        <sys_update_name>sp_widget_754df4594724f11012c73d8a436d4392</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-08 06:32:11</sys_updated_on>
+        <template><![CDATA[<div>
+  <table id="loaner-vehicle-table">
+    <thead>
+      <tr>
+        <th>Number</th>
+        <th>Status</th>
+        <th>Description</th>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="vehicle in c.data.vehicles">
+        <td>{{vehicle.number}}</td>
+        <td>{{vehicle.status}}</td>
+        <td>{{vehicle.description}}</td>
+        <td>{{vehicle.make}}</td>
+        <td>{{vehicle.model}}</td>
+        <td>{{vehicle.year}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

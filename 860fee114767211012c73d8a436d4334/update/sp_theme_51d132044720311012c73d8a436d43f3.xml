@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>// Grays&#13;
+$gray-base: #020103;&#13;
+$gray-dark: #674005;&#13;
+$gray-darker: lighten($gray-base, 8.24%);&#13;
+$gray-light: #ECECEC;&#13;
+$gray-lighter: lighten($gray-base, 94.51%);&#13;
+$gray: lighten($gray-base, 29.02%);&#13;
+&#13;
+// Branding variables&#13;
+$brand-primary: #c83e95;&#13;
+$body-bg: #ffffff;&#13;
+$brand-success: #000000;&#13;
+$state-success-text: darken(desaturate(adjust-hue($brand-success, 3), 15.64%), 34.31);&#13;
+$sp-navbar-divider-color: #5A7F71;&#13;
+$text-color: $gray-dark;&#13;
+$navbar-inverse-link-hover-color: $brand-success;&#13;
+$navbar-inverse-bg: rgba(0, 0, 0, 0.5) !important;&#13;
+$brand-warning: #674005;&#13;
+$brand-danger: #020103;&#13;
+$sp-tagline-color: #ffffff;&#13;
+$navbar-inverse-link-color: #ffffff;&#13;
+$brand-info: #6ABECF;&#13;
+$link-color: $brand-primary;&#13;
+$sp-logo-margin-x: 15px;&#13;
+$text-muted: $gray-light;&#13;
+&#13;
+$brand-primary-dark: darken($brand-primary, 20%);&#13;
+$brand-primary-darker: darken($brand-primary, 30%);&#13;
+$brand-primary-light: lighten($brand-primary, 20%);&#13;
+$brand-primary-lighter: lighten($brand-primary, 30%);&#13;
+$brand-primary-lightest: lighten($brand-primary, 40%);&#13;
+$dropdown-link-disabled-color: $gray-light;&#13;
+$link-hover-color: darken($brand-primary, 15%);&#13;
+$navbar-inverse-link-active-bg: darken($brand-primary, 10%);&#13;
+$navbar-inverse-link-hover-bg: lighten($brand-primary, 10%);&#13;
+$panel-primary-border: $brand-primary;&#13;
+$panel-primary-heading-bg: $brand-primary;&#13;
+$panel-primary-text: #ffffff;&#13;
+$primary: $brand-primary;&#13;
+$input-border-focus: $brand-primary;&#13;
+$quicklinks-background: #EDF7F5;&#13;
+$btn-success-bg: $brand-success;&#13;
+$btn-default-color: $gray-dark;&#13;
+$btn-primary-color: #ffffff;&#13;
+$btn-primary-bg: $brand-primary;&#13;
+$btn-primary-border: darken($brand-primary, 5%);&#13;
+$btn-success-bg: $brand-success;&#13;
+$btn-success-border: darken($brand-success, 5%);&#13;
+$btn-success-color: darken(desaturate(adjust-hue($brand-success, 3), 15.64%), 34.31);&#13;
+$btn-disabled-opacity: 0.25;&#13;
+$component-active-color: $gray;&#13;
+$component-active-bg: #f5f5f5;&#13;
+$state-danger-bg: lighten(saturate(adjust-hue($brand-danger, 354), 42.52%), 42.94);&#13;
+$state-danger-border: $brand-danger;&#13;
+$state-danger-text: #64201A;&#13;
+$state-info-bg: lighten(desaturate($brand-info, 3.27%), 19.02);&#13;
+$state-info-border: $brand-info;&#13;
+$state-info-text: darken(desaturate(adjust-hue($brand-info, 1), 2.75%), 41.57);&#13;
+$state-success-bg: lighten(saturate($brand-success, 3.67%), 28.24);&#13;
+$state-success-border: $brand-success;&#13;
+$state-warning-bg: lighten(saturate(adjust-hue($brand-warning, -3), 17.70%), 29.61);&#13;
+$state-warning-border: $brand-warning;&#13;
+$state-warning-text: darken(desaturate(adjust-hue($brand-warning, -4), 20.32%), 44.31);&#13;
+$alert-danger-bg: $state-danger-bg;&#13;
+$alert-danger-border: $state-danger-border;&#13;
+$alert-danger-text: $state-danger-text;&#13;
+$alert-info-bg: $state-info-bg;&#13;
+$alert-info-border: $state-info-border;&#13;
+$alert-info-text: $state-info-text;&#13;
+$alert-success-bg: $state-success-bg;&#13;
+$alert-success-border: $state-success-border;&#13;
+$alert-success-text: $state-success-text;&#13;
+$alert-warning-bg: $state-warning-bg;&#13;
+$alert-warning-border: $state-warning-border;&#13;
+$alert-warning-text: $state-warning-text;&#13;
+&#13;
+$primary: $brand-primary;&#13;
+$warning: $brand-warning;&#13;
+$success: $brand-success;&#13;
+$info: $brand-info;&#13;
+$danger: $brand-danger;&#13;
+$input-border-placeholder: white;&#13;
+&#13;
+$panel-list-item: lighten(desaturate(adjust-hue($panel-primary-heading-bg, -6), 20.79%), 58.04);&#13;
+$panel-primary-heading-bg: $brand-primary;&#13;
+&#13;
+$login-btn-bg: $btn-primary-bg;&#13;
+$login-btn-border: $btn-primary-border;&#13;
+</css_variables>
+        <footer/>
+        <footer_fixed>false</footer_fixed>
+        <header display_value="Vehicle Service Header">17fcb2444724311012c73d8a436d43d6</header>
+        <name>Vehicle Service Portal Theme</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 17:46:37</sys_created_on>
+        <sys_id>51d132044720311012c73d8a436d43f3</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Vehicle Service Portal Theme</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_759169_lva">860fee114767211012c73d8a436d4334</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">860fee114767211012c73d8a436d4334</sys_scope>
+        <sys_update_name>sp_theme_51d132044720311012c73d8a436d43f3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-08 17:24:41</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
+    </sp_theme>
+</record_update>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_759169_lva.getUserInfo</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>getUserInfo</name>
+        <script><![CDATA[var getUserInfo = Class.create();
+getUserInfo.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+getLocation: function(){
+
+
+	var user_id = this.getParameter('sysparm_user_sys_id');
+	var result = ''; 
+
+	var gr = new GlideRecord('sys_user');
+	gr.addQuery('sys_id', user_id);
+	gr.query();
+
+	if(gr.next()){
+		result = gr.getValue('location');
+	}
+
+	return result;
+
+
+
+},
+
+getDepartment: function () {
+
+},
+
+getContact: function () { 
+
+},
+
+    type: 'getUserInfo'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-07 18:49:47</sys_created_on>
+        <sys_id>5ec37e8747f3211012c73d8a436d4336</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>getUserInfo</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_759169_lva">860fee114767211012c73d8a436d4334</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">860fee114767211012c73d8a436d4334</sys_scope>
+        <sys_update_name>sys_script_include_5ec37e8747f3211012c73d8a436d4336</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-08 15:40:08</sys_updated_on>
+    </sys_script_include>
+</record_update>
