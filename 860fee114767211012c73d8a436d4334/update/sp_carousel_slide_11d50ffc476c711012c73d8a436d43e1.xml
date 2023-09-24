@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_carousel_slide">
     <sp_carousel_slide action="INSERT_OR_UPDATE">
         <background>a8f5033047ac711012c73d8a436d4342</background>
-        <carousel display_value="">36eecef847a8711012c73d8a436d43b0</carousel>
+        <carousel/>
         <name>Tacoma Access</name>
         <order>400</order>
         <sys_class_name>sp_carousel_slide</sys_class_name>

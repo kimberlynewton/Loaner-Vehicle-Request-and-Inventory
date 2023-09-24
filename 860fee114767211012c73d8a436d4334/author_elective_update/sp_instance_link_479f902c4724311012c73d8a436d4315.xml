@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph>home</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>Just got back? Let's get your vehicle checked in.</short_description>
+        <size>md</size>
+        <sp_column display_value="2">439f902c4724311012c73d8a436d4313</sp_column>
+        <sp_page display_value="vehicle_returns">4f545f0047a4311012c73d8a436d4302</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-05 20:22:59</sys_created_on>
+        <sys_id>479f902c4724311012c73d8a436d4315</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Vehicle Return</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_759169_lva">860fee114767211012c73d8a436d4334</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">860fee114767211012c73d8a436d4334</sys_scope>
+        <sys_update_name>sp_instance_link_479f902c4724311012c73d8a436d4315</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-05 21:24:48</sys_updated_on>
+        <title>Vehicle Return</title>
+        <type>page</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Color Box",
+		"displayValue": "Color Box"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="DELETE" query="documentkey=479f902c4724311012c73d8a436d4315"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Vehicle Request and Inventory">860fee114767211012c73d8a436d4334</application>
+        <file_path/>
+        <instance_id>c330c3c81b6d8110c8432f8dee4bcbc8</instance_id>
+        <instance_name>dev124803</instance_name>
+        <name>sp_instance_link_479f902c4724311012c73d8a436d4315</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph&gt;home&lt;/glyph&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item/&gt;&lt;sc_category/&gt;&lt;short_description&gt;Just got back? Let's get your vehicle checked in.&lt;/short_description&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;439f902c4724311012c73d8a436d4313&lt;/sp_column&gt;&lt;sp_page display_value="vehicle_returns"&gt;4f545f0047a4311012c73d8a436d4302&lt;/sp_page&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-05 20:22:59&lt;/sys_created_on&gt;&lt;sys_id&gt;479f902c4724311012c73d8a436d4315&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Vehicle Return&lt;/sys_name&gt;&lt;sys_package display_value="Loaner Vehicle Request and Inventory" source="x_759169_lva"&gt;860fee114767211012c73d8a436d4334&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Loaner Vehicle Request and Inventory"&gt;860fee114767211012c73d8a436d4334&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_479f902c4724311012c73d8a436d4315&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-05 21:24:48&lt;/sys_updated_on&gt;&lt;title&gt;Vehicle Return&lt;/title&gt;&lt;type&gt;page&lt;/type&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "Color Box",
+		"displayValue": "Color Box"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=479f902c4724311012c73d8a436d4315"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1966201019</payload_hash>
+        <record_name>Vehicle Return</record_name>
+        <reverted_from/>
+        <source>836f66514767211012c73d8a436d43f9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-05 21:24:49</sys_created_on>
+        <sys_id>60cd20a84764311012c73d8a436d43e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>189c796b1ca0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-05 21:24:49</sys_updated_on>
+        <type>Instance with Link</type>
+        <update_guid>68cd20a87b64311035ff116db1fba9e0</update_guid>
+        <update_guid_history>68cd20a87b64311035ff116db1fba9e0:1966201019,c8ad6c2839643110ce3e5f28ca237fc9:-675277255,e72d286870643110fd7b905d82458f44:-982788261,d1d9e0a4836431109ab59f47f54fdf34:295471125,0b9f902c8924311096f61b633ce47d16:-387352236</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Vehicle Return">17ceb6a047ac311012c73d8a436d4340</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-06 07:58:31</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_link">sp_instance_link</sys_db_object>
+        <sys_id>0c3f37f82a6d4ed0882dba4545db16f1</sys_id>
+        <sys_metadata>479f902c4724311012c73d8a436d4315</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vehicle Return</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_759169_lva">860fee114767211012c73d8a436d4334</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">860fee114767211012c73d8a436d4334</sys_scope>
+        <sys_scope_delete display_value="">764e94201cb843b28f80b182d08a50a4</sys_scope_delete>
+        <sys_update_name>sp_instance_link_479f902c4724311012c73d8a436d4315</sys_update_name>
+        <sys_update_version display_value="sp_instance_link_479f902c4724311012c73d8a436d4315">60cd20a84764311012c73d8a436d43e1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-06 07:58:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

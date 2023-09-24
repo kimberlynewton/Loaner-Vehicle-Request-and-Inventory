@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
     <sp_rel_widget_clone action="INSERT_OR_UPDATE">
-        <child display_value="Copy of Homepage Search">874d2d384728711012c73d8a436d43cc</child>
+        <child display_value="Location Search">874d2d384728711012c73d8a436d43cc</child>
         <cloned>2023-08-06 20:40:54</cloned>
         <last_validated>2023-08-06 20:40:54</last_validated>
         <parent display_value="Homepage Search">200fbd96cb20020000f8d856634c9ca1</parent>

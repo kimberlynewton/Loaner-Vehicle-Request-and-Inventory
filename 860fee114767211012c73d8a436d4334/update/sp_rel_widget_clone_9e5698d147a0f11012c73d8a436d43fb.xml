@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
     <sp_rel_widget_clone action="INSERT_OR_UPDATE">
-        <child display_value="Copy of Sample Footer">1e5698d147a0f11012c73d8a436d43f7</child>
+        <child display_value="Loaner Footer">1e5698d147a0f11012c73d8a436d43f7</child>
         <cloned>2023-08-08 03:37:58</cloned>
         <last_validated>2023-08-08 03:37:58</last_validated>
         <parent display_value="Sample Footer">feb4f763df121200ba13a4836bf26320</parent>

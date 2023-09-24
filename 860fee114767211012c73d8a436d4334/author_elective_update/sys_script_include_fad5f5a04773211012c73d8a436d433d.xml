@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_759169_lva.GetUserDetails</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>catalog client script to auto-populate the Office location field when the Requested for field is populated.</description>
+        <name>GetUserDetails</name>
+        <script><![CDATA[var GetUserDetails = Class.create();
+GetUserDetails.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+    getUserLocation: function() {
+        var userSysId = this.getParameter('sysparm_user_sys_id');
+        var gr = new GlideRecord('sys_user');
+        if (gr.get(userSysId)) {
+            return gr.location.name; // assumes the field on sys_user is named 'location'
+        }
+        return ''; // return empty string if no location found
+    },
+
+    type: 'GetUserDetails'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-29 19:54:29</sys_created_on>
+        <sys_id>fad5f5a04773211012c73d8a436d433d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetUserDetails</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_759169_lva">860fee114767211012c73d8a436d4334</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">860fee114767211012c73d8a436d4334</sys_scope>
+        <sys_update_name>sys_script_include_fad5f5a04773211012c73d8a436d433d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-29 19:54:29</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Vehicle Request and Inventory">860fee114767211012c73d8a436d4334</application>
+        <file_path/>
+        <instance_id>c330c3c81b6d8110c8432f8dee4bcbc8</instance_id>
+        <instance_name>dev124803</instance_name>
+        <name>sys_script_include_fad5f5a04773211012c73d8a436d433d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_759169_lva.GetUserDetails&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;catalog client script to auto-populate the Office location field when the Requested for field is populated.&lt;/description&gt;&lt;name&gt;GetUserDetails&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var GetUserDetails = Class.create();
+GetUserDetails.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+    getUserLocation: function() {
+        var userSysId = this.getParameter('sysparm_user_sys_id');
+        var gr = new GlideRecord('sys_user');
+        if (gr.get(userSysId)) {
+            return gr.location.name; // assumes the field on sys_user is named 'location'
+        }
+        return ''; // return empty string if no location found
+    },
+
+    type: 'GetUserDetails'
+});
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-06-29 19:54:29&lt;/sys_created_on&gt;&lt;sys_id&gt;fad5f5a04773211012c73d8a436d433d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;GetUserDetails&lt;/sys_name&gt;&lt;sys_package display_value="Loaner Vehicle Request and Inventory" source="x_759169_lva"&gt;860fee114767211012c73d8a436d4334&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Loaner Vehicle Request and Inventory"&gt;860fee114767211012c73d8a436d4334&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_fad5f5a04773211012c73d8a436d433d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-06-29 19:54:29&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-607965807</payload_hash>
+        <record_name>GetUserDetails</record_name>
+        <reverted_from/>
+        <source>836f66514767211012c73d8a436d43f9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-29 19:54:30</sys_created_on>
+        <sys_id>cd467da04773211012c73d8a436d43db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18908b8b6ae0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-29 19:54:30</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>05467da0ea7321107b99e63d447853db</update_guid>
+        <update_guid_history>05467da0ea7321107b99e63d447853db:-607965807</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-03 04:22:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>01d198a516e44e70802928d5b9250e40</sys_id>
+        <sys_metadata>fad5f5a04773211012c73d8a436d433d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetUserDetails</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_759169_lva">860fee114767211012c73d8a436d4334</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">860fee114767211012c73d8a436d4334</sys_scope>
+        <sys_scope_delete display_value="">764e94201cb843b28f80b182d08a50a4</sys_scope_delete>
+        <sys_update_name>sys_script_include_fad5f5a04773211012c73d8a436d433d</sys_update_name>
+        <sys_update_version display_value="sys_script_include_fad5f5a04773211012c73d8a436d433d">cd467da04773211012c73d8a436d43db</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-03 04:22:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

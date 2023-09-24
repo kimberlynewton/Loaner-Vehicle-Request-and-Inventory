@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_carousel_slide">
     <sp_carousel_slide action="INSERT_OR_UPDATE">
         <background>16935c0d47a0b11012c73d8a436d43f0</background>
-        <carousel display_value="">098ec08547a0b11012c73d8a436d431b</carousel>
+        <carousel/>
         <name>three</name>
         <order>100</order>
         <sys_class_name>sp_carousel_slide</sys_class_name>

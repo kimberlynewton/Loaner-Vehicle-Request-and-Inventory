@@ -13,7 +13,7 @@
         <label>Loaner Vehicle Catalog</label>
         <live_feed_enabled>false</live_feed_enabled>
         <name>x_759169_lva_loaner_vehicle_catalog</name>
-        <number_ref display_value="LVA">4ba07a914767211012c73d8a436d43ff</number_ref>
+        <number_ref display_value="LOA">4ba07a914767211012c73d8a436d43ff</number_ref>
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>

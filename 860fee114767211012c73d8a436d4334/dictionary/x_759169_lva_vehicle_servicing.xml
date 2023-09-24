@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="23aaee614727611012c73d8a436d4389" label="Vehicle Servicing " max_length="40" name="x_759169_lva_vehicle_servicing" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Date sent for Servicing" mandatory="true" max_length="40" name="u_date_sent_for_servicing" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Ticket Status" mandatory="true" max_length="40" name="u_ticket_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="0" value="open"/>
+                <element inactive_on_update="false" label="Closed" sequence="1" value="closed"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Vehicle" mandatory="true" max_length="32" name="u_vehicle" reference="x_759169_lva_loaner_vehicle_catalog" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Vehicle Issues" mandatory="true" max_length="1000" name="u_vehicle_issues" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="in service" label="Vehicle Status" mandatory="true" max_length="40" name="u_vehicle_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="In Service" sequence="0" value="in service"/>
+                <element inactive_on_update="false" label="Returned to Warehouse" sequence="1" value="returned to warehouse"/>
+                <element inactive_on_update="false" label="Decommissioned" sequence="2" value="decommissioned"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Work Performed" max_length="1000" name="u_work_performed" type="string"/>
+        <element attributes="encode_utf8=false" label="Vehicle Tracker" mandatory="true" max_length="32" name="vehicle_tracker" reference="x_759169_lva_vehicle_tracker" type="reference"/>
+        <index name="index">
+            <element name="u_vehicle"/>
+        </index>
+        <index name="index2">
+            <element name="vehicle_tracker"/>
+        </index>
+    </element>
+</database>
